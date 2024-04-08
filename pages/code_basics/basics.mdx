@@ -1,0 +1,67 @@
+# Your first steps to learning JavaScript
+
+What you are going to do next will depend on your current level of knowledge. I know I said that this is a beginner's guide, but I also know that a lot of people have actually already seen at least a little bit of coding before. So, I will give you a few options to choose from.
+
+### If you are a complete beginner
+
+If you can't understand the following code, you should start with the first option.
+
+```javascript
+const bob = {
+  name: "Bob",
+  age: 25,
+  isCool: true,
+};
+
+let alice = {
+  name: "Alice",
+  age: 18,
+  isCool: false,
+};
+
+const peopleILike = [
+  {
+    name: "John",
+    age: 25,
+    isCool: true,
+    children: [bob, alice],
+  },
+  {
+    name: "Jane",
+    age: 22,
+  },
+];
+
+alice = {
+  ...alice,
+  isCool: true,
+  children: [bob],
+};
+
+peopleILike.push(alice);
+
+function greetPerson(person) {
+  const { name, age, isCool } = person;
+  if (isCool in person && isCool === true) {
+    console.log(`Hello, ${name}! You are ${age} years old and you are cool!`);
+  } else if (age > 20) {
+    console.log(`Hello, ${name}! You are old.`);
+  } else {
+    console.log(`Hello, ${name}!`);
+  }
+}
+
+peopleILike.forEach((person) => greetPerson(person));
+
+const coolPeopleNames = peopleILike
+  .filter((person) => person.isCool)
+  .map((person) => person.name);
+```
+
+If you can't understand the code above, you should start with the following video on YouTube. It is 3.5 hours long and it's going to teach you everything you need to know to understand the code above and much more.
+
+**Important:** Don't mindlessly watch the video. Try to code along with the instructor. If you are out of mindjuice, take a break and come back later. It's important to understand these concepts before moving on.
+
+> https://www.youtube.com/watch?v=PkZNo7MFNFg
+
+After you have are done with learning the basics of JavaScript, you can come back here and continue with the next steps.
