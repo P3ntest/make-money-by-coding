@@ -26,3 +26,36 @@ Watch this amazing video from my favorite YouTuber, Fireship, to get a quick int
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 />
+
+## Things to know about Visual Studio Code
+
+- **Command Palette**: Press `Cmd + Shift + P` on mac or `Ctrl + Shift + P` on windows to open the Command Palette. This is where you can search for commands and settings. This is super useful if you wan't to do something but don't know how to do it. Just search for it in the Command Palette.
+- **Command Line**: Search for "Terminal" in the Command Palette to open the integrated terminal at the bottom of the screen.
+
+## A quick note about the Terminal
+
+Okay, take a breather and don't freak out. I know the terminal looks like something out of a hacker movie, but it's not that scary. It's actually quite useful. The terminal is another way of interacting with your computer. Instead of opening applications and clicking around to achieve stuff, you can type commands here to do the same thing. Commands also always start with the application you want to actually run. For example, VSCode is also usable via the command line. Instead of opening a window of VSCode and then opening a folder, you can just type `code <your-directory>` in the terminal to open that directory in VSCode.
+
+### The specialty of terminals vs traditional UIs
+
+With traditional UI usage of your computer, you are basically almost in your desktop folder. You can open applications, files, and folders from there. And when you open another folder, you open a window to display whats in that folder.
+
+With terminals, you are also always in some folder on your computer. This is called the current working directory. The command `pwd` (print working directory) will show you the current working directory. This is the directory where all commands will be run from.
+
+### Important Terminal Commands
+
+- `ls`: List all files and folders in the current working directory.
+- `cd <directory>`: Change the current working directory to the directory specified.
+- `cd ..`: Change the current working directory to the parent directory.
+- `pwd`: Print the current working directory.
+
+### How paths work
+
+This is not only important for the terminal, but also for programming in general. Paths are used to specify the location of a file or folder on your computer. Depending on wether a path starts with a `/` or not, it is either an absolute path or a relative path.
+
+- **Absolute Path**: An absolute path starts with a `/` and specifies the location of a file or folder from the root of your computer. It doesn't matter what the current working directory is. For example, `/Users/your-username/Documents`.
+- **Relative Path**: A relative path specifies the location of a file or folder relative to the current working directory. For example, if the current working directory is `/Users/your-username`, the relative path `Documents` would refer to `/Users/your-username/Documents`.
+  - `.`: The current directory.
+  - `..`: The parent directory.
+  - `~`: The home directory.
+  - **Example**: If the current path is `/Users/your-username/Documents`, the relative path `../Downloads` would refer to `/Users/your-username/Downloads`.
