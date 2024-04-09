@@ -1,3 +1,5 @@
 {
-    "intro": "An Introduction to JavaScript"
+    "intro": "An Introduction to JavaScript",
+    "basics": "The Basics of JavaScript",
+    "environment": "Setting Up Your Environment"
 }
