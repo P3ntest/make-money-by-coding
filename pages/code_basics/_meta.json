@@ -1,5 +1,7 @@
 {
     "intro": "An Introduction to JavaScript",
     "basics": "The Basics of JavaScript",
-    "environment": "Setting Up Your Environment"
+    "environment": "Setting Up Your Environment",
+    "frontend": "Learn JavaScript for Front-End Development",
+    "backend": "Learn JavaScript for Back-End Development"
 }
